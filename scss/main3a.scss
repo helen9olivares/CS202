@@ -1,0 +1,74 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+//variables
+$bg-color: #f0f0f0;
+$border-color: #ccc;
+$text-color: #fff;
+
+.box{
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    border:1px solid $border-color;
+    margin: 15px;
+    //float also makes them not jumble up which is what happened, also remenber to add the new clearfix in HTML
+    float: left;
+}
+.box1{
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid $border-color;
+    margin: 15px;
+    background-color:$bg-color ;
+}
+
+main{
+    display: flex;
+    //flex direction
+    //flex-direction: column;
+
+
+    //wrao
+    //flex-wrap: wrap;
+
+    //justify-content
+    justify-content: space-around;
+    //start, center, space-between, end 
+
+    //align-items(center, content, vertically)
+   // height: 80vh;
+    //align-items: center;
+    
+}
+
+.four{
+    //flex-grow
+    //flex-grow: 0;
+    //flex-shrink: 0;
+    //flex-basis: 300px; //should now have a min-width of 300px
+    // shorthand - flex: flex-grow flex-shrink flex-basis;
+    // instead of writing everything else all over again just do:
+    flex: 0 0 300px
+}
+
+.five{
+    //flex-grow: 1;
+    //flex-shrink: 1;
+    //flex-basis
+    flex: 1;
+}
+
+.six{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.seven{
+    flex-grow: 3;
+    flex-shrink: 3;
+}
